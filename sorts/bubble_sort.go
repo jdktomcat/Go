@@ -5,7 +5,6 @@ import (
 )
 
 func bubbleSort(array []int) {
-
 	swapped := true
 	for swapped {
 		swapped = false
@@ -25,7 +24,6 @@ func Swap(array []int, i, j int) {
 }
 
 func main() {
-
 	array := []int{1, 6, 2, 4, 9, 0, 5, 3, 7, 8}
 	fmt.Println("Unsorted array: ", array)
 	bubbleSort(array)
