@@ -4,30 +4,30 @@ import (
 	"fmt"
 )
 
-func bubbleSort(arrayzor []int) {
+func bubbleSort(array []int) {
 
-	swapped := true;
+	swapped := true
 	for swapped {
 		swapped = false
-		for i := 0; i < len(arrayzor) - 1; i++ {
-			if arrayzor[i + 1] < arrayzor[i] {
-				Swap(arrayzor, i, i + 1)
+		for i := 0; i < len(array)-1; i++ {
+			if array[i+1] < array[i] {
+				Swap(array, i, i+1)
 				swapped = true
 			}
 		}
-	}	
+	}
 }
 
-func Swap(arrayzor []int, i, j int) {
-	tmp := arrayzor[j]
-	arrayzor[j] = arrayzor[i]
-	arrayzor[i] = tmp
+func Swap(array []int, i, j int) {
+	tmp := array[j]
+	array[j] = array[i]
+	array[i] = tmp
 }
 
 func main() {
 
-	arrayzor := []int{1, 6, 2, 4, 9, 0, 5, 3, 7, 8}
-	fmt.Println("Unsorted array: ", arrayzor)
-	bubbleSort(arrayzor)
-	fmt.Println("Sorted array: ", arrayzor)
+	array := []int{1, 6, 2, 4, 9, 0, 5, 3, 7, 8}
+	fmt.Println("Unsorted array: ", array)
+	bubbleSort(array)
+	fmt.Println("Sorted array: ", array)
 }
