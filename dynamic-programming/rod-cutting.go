@@ -6,7 +6,7 @@ package dpRodCutting
 
 // package main
 
-import "fmt"
+import _ "fmt"
 
 func max(a, b int) int {
 	if a > b {

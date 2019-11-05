@@ -13,7 +13,7 @@ func sieve(upperBound int64) []int64 {
 	var bs [10000010]bool
 	//creates a slice to save the primes it finds
 	primes := make([]int64, 0, 1000)
-	
+
 	bs[0] = true
 	bs[1] = true
 	//iterate over the numbers set
@@ -32,7 +32,7 @@ func sieve(upperBound int64) []int64 {
 
 func main() {
 	//prints first N primes into console
-	N := 100
-	primes := sieve(N)
+	N := 1000
+	primes := sieve(int64(N))
 	fmt.Println(primes)
 }
